@@ -1,0 +1,7 @@
+pnpm-lock.yaml
+dist
+build
+.svelte-kit
+.vizdiff
+test-results
+playwright-report

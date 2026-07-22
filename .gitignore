@@ -1,0 +1,30 @@
+node_modules
+
+# Build output
+dist
+/apps/web/build
+.svelte-kit
+
+# Tool output
+.vizdiff
+test-results
+playwright-report
+
+# Legacy/generated screenshot output must never be committed
+/static/results/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea
+
+# Env (none required, but just in case)
+.env
+.env.*
+!.env.example
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*

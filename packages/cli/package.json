@@ -1,0 +1,28 @@
+{
+  "name": "@webpage-viz-differ/cli",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "CLI for webpage-viz-differ: visual comparison between two live sites",
+  "type": "module",
+  "bin": {
+    "vizdiff": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "test": "echo 'covered by core unit tests'",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@webpage-viz-differ/core": "workspace:*",
+    "commander": "^14.0.0",
+    "picocolors": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.9.0"
+  }
+}
