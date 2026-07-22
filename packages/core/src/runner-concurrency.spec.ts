@@ -29,7 +29,9 @@ describe('paired capture concurrency', () => {
       releaseSlowCapture = () => resolve({ width: 100, height: 100 });
     });
     capturePageMock.mockImplementation((_browser: Browser, { url }: { url: string }) =>
-      url.startsWith('https://a.test') ? Promise.reject(new Error('site A failed')) : slowCapture
+      new URL(url).origin === 'https://a.test'
+        ? Promise.reject(new Error('site A failed'))
+        : slowCapture
     );
 
     const comparison = runComparison(
