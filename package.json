@@ -21,14 +21,14 @@
   "devDependencies": {
     "@eslint/compat": "^2.0.0",
     "@eslint/js": "^10.0.0",
-    "eslint": "^10.0.0",
+    "eslint": "^10.9.0",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-svelte": "^3.22.0",
-    "globals": "^17.0.0",
+    "eslint-plugin-svelte": "^3.23.0",
+    "globals": "^17.11.0",
     "prettier": "^3.6.0",
     "prettier-plugin-svelte": "^4.1.0",
     "prettier-plugin-tailwindcss": "^0.8.0",
-    "typescript": "^5.9.0",
-    "typescript-eslint": "^8.65.0"
+    "typescript": "^7.0.2",
+    "typescript-eslint": "^8.67.0"
   }
 }
